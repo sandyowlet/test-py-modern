@@ -1,0 +1,18 @@
+project_name: "test-py-modern"
+project_description: "A project to test the py-modern template"
+author: "sandyowlet"
+email: "sandyowlet@gmail.com"
+github_username: "sandyowlet"
+min_python_version: "3.12"
+license: "MIT license"
+copyright_year: "2025"
+mkdocs: true
+pre_commit_hooks: true
+pytest: true
+github_issues_template: true
+github_actions: true
+project_version: "0.0.1"
+publish_to_pypi: true
+bump_version: true
+release_to_github: true
+justfile: true

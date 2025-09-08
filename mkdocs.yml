@@ -1,0 +1,85 @@
+site_name: test-py-modern
+repo_url: https://github.com/sandyowlet/test-py-modern
+site_url: https://sandyowlet.github.io/test-py-modern
+site_description: A project to test the py-modern template
+site_author: sandyowlet
+edit_uri: edit/main/docs/
+repo_name: sandyowlet/test-py-modern
+copyright: Maintained by <a href="https://github.com/sandyowlet">sandyowlet</a>.
+
+nav:
+  - Home:
+      - Overview: index.md
+  - Getting Started: getting_started.md
+  # - API Reference
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src"]
+          options:
+            # Whether to show the source code of the functions and classes
+            show_source: false
+            # The style of the docstrings
+            docstring_style: numpy
+            # The level of the headings
+            heading_level: 3
+            # The order of the members
+            extra:
+              members_order: source
+  # Plugin to include markdown files from the root/docs directory
+  # - include-markdown
+
+theme:
+  name: material
+  features:
+    # Features to enable
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.instant.preview
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MeridianInnovation/pysenxor-open
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/pysenxor-open
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - admonition
