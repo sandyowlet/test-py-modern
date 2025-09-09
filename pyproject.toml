@@ -72,6 +72,9 @@ warn_return_any = true
 warn_unused_ignores = true
 show_error_codes = true
 
+[tool.pyright]
+include = ["src"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--capture sys --verbose"
