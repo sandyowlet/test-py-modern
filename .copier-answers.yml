@@ -16,3 +16,5 @@ publish_to_pypi: true
 bump_version: true
 release_to_github: true
 justfile: true
+
+_src_path: 'gh:sandyowlet/py-modern'
