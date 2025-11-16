@@ -125,7 +125,6 @@ select = [
     "PD",
     "E",
     "W",
-    "DOC102",
     "DOC202",
     "DOC403",
     "D",
@@ -170,5 +169,3 @@ unfixable = ["F401"]
 [tool.ruff.format]
 skip-magic-trailing-comma = false
 docstring-code-format = true
-
-
